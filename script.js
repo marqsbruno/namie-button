@@ -8,7 +8,9 @@ const handleButton = () => {
   let y = Math.floor(
     Math.random() * (window.innerHeight - container.offsetHeight)
   );
-
+  if (x < 50) {
+    x = window.innerWidth;
+  }
   if (y < 100) {
     y = window.innerHeight;
   }
