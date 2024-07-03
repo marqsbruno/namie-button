@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/icon.png" />
     <title>Normal button</title>
     <style>
       * {
@@ -23,6 +24,8 @@
         left: 50%;
         transform: translate(-50%, -50%);
         transition: top 0.5s, left 0.5s;
+        display: flex;
+        flex-direction: column;
       }
       img {
         width: 200px;
@@ -41,7 +44,7 @@
   <body>
     <div class="container">
       <button class="btn">Clica aqui!</button>
-      <img src="./source.png" alt="aaaa" />
+      <img src="./assets/source.png" alt="aaaa" />
     </div>
   </body>
   <script src="./script.js"></script>
