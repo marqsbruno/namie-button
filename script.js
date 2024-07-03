@@ -19,7 +19,6 @@ const handleButton = () => {
   container.style.top = `${y}px`;
 
   console.log(x, y);
-  console.log(window.innerHeight);
 };
 
 button.addEventListener("mouseenter", handleButton);
