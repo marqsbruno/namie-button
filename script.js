@@ -23,3 +23,6 @@ const handleButton = () => {
 };
 
 button.addEventListener("mouseenter", handleButton);
+button.addEventListener("click", () => {
+  window.alert("かっこいい!!!");
+});
