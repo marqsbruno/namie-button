@@ -1,5 +1,6 @@
 const container = document.querySelector(".container");
 const button = document.querySelector("button");
+const img = document.querySelector("img");
 
 const handleButton = () => {
   let x = Math.floor(
@@ -17,11 +18,17 @@ const handleButton = () => {
 
   container.style.left = `${x}px`;
   container.style.top = `${y}px`;
-
-  console.log(x, y);
 };
 
 button.addEventListener("mouseenter", handleButton);
 button.addEventListener("click", () => {
   window.alert("かっこいい!!!");
+});
+
+img.addEventListener("dblclick", () => {
+  img.style.animation = "rotate 1s linear";
+  console.log("oi erika!");
+  setTimeout(() => {
+    img.style.animation = "";
+  }, 1000);
 });
